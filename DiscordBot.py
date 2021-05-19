@@ -15,7 +15,7 @@ class MyCLient(discord.Client):
         if message.content == "!riddle" or message.content == "!Riddle":
             satz_liste = ["Riddle du alter Haudegen!", "Gold war mal cool, aber nicht eternal....",
                           "The serpent dies but its soul is eternal...", "LeL I bims Riddle! "]
-            index = randint(0, len(satz_liste))
+            index = randint(0, len(satz_liste) - 1)
             text = satz_liste[index]
             await message.channel.send("`" + text + "`")
 
