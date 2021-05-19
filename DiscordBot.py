@@ -30,7 +30,8 @@ class MyCLient(discord.Client):
             await message.channel.send("`" + text + "`")
 
         if message.content == "!pure" or message.content == "!pureluck":
-            satz_liste = ["My Panda is STRONK!!!", "Iskender Kebab ist beste! ", "Who wants some ruins? Too bad, those are mine."]
+            satz_liste = ["My Panda is STRONK!!!", "Iskender Kebab ist beste! ", "Who wants some ruins? Too bad, those are mine.",
+                          "I have apples for everyone. "]
             index = randint(0, len(satz_liste) - 1)
             text = satz_liste[index]
             await message.channel.send("`" + text + "`")
