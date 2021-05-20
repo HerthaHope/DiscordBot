@@ -88,7 +88,7 @@ class MyCLient(discord.Client):
         if message.content == "!skylords":
             await message.channel.send("`" + "#noMoneySpent" + "`")
 
-        if message.content == "!champion":
+        if message.content == "!champions":
             await message.channel.send("`" + "#noMoneySpentlikeSkyLords" + "´")
 
         if message.content == "!eternalsouls":
