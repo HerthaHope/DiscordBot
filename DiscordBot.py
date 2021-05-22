@@ -41,7 +41,7 @@ class MyCLient(discord.Client):
             await message.channel.send("`" + text + "`")
 
         if message.content == "!guiying" or message.content == "!Guiying":
-            satz_liste = ["Ja ich spiele noch, aber Riddle ist bei uns....", "Und plötzlich war ich Führer. Wie manch anderer Öster....",
+            satz_liste = ["Ja ich spiele noch, aber Riddle ist bei uns....",
                           "Ying mein Name. GuiYing."]
             index = randint(0, len(satz_liste) - 1)
             text = satz_liste[index]
