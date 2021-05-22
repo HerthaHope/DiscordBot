@@ -14,13 +14,17 @@ class MyCLient(discord.Client):
 
         if message.content == "!riddle" or message.content == "!Riddle":
             satz_liste = ["Riddle du alter Haudegen!", "Gold war mal cool, aber nicht eternal....",
-                          "The serpent dies but its soul is eternal...", "LeL I bims Riddle! "]
+                          "The serpent dies but its soul is eternal...", "LeL I bims Riddle! " "Dracarys!"]
             index = randint(0, len(satz_liste) - 1)
             text = satz_liste[index]
             await message.channel.send("`" + text + "`")
 
         if message.content == "!hertha":
-            await message.channel.send("`" + "Read Nine Star Hegemon Body Art! " + "`")
+            satz_liste = ["Hier könnte Ihre Werbung stehen!", "Read Nine Star Hegemon Body Arts!", "You should try Overgeared!",
+                          "May the bot grow! "]
+            index = randint(0, len(satz_liste) - 1)
+            text = satz_liste[index]
+            await message.channel.send("`" + text + "`")
 
         if message.content == "!chigga":
             satz_liste = ["Join Skylords with your whole family... or something like that...", "I am french and everyone should know! ",
@@ -31,7 +35,7 @@ class MyCLient(discord.Client):
 
         if message.content == "!pure" or message.content == "!pureluck":
             satz_liste = ["My Panda is STRONK!!!", "Iskender Kebab ist beste! ", "Who wants some ruins? Too bad, those are mine.",
-                          "I have apples for everyone. "]
+                          "I have apples for everyone. ", "Das Leben ist hart ohne Mastercard!"]
             index = randint(0, len(satz_liste) - 1)
             text = satz_liste[index]
             await message.channel.send("`" + text + "`")
@@ -88,14 +92,14 @@ class MyCLient(discord.Client):
         if message.content == "!skylords":
             await message.channel.send("`" + "#noMoneySpent" + "`")
 
-        if message.content == "!champions":
+        if message.content == "!champion":
             await message.channel.send("`" + "#noMoneySpentlikeSkyLords" + "´")
 
         if message.content == "!eternalsouls":
             await message.channel.send("`" + "This is french now. " + "`")
 
         if message.content == "!forthequest":
-            await message.channel.send("`" + "We have no answers forthequestIONS." + "`")
+            await message.channel.send("`" + "We have no answers FORTHEQUESTions." + "`")
 
 
 client = MyCLient()
