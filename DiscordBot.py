@@ -13,11 +13,11 @@ class MyCLient(discord.Client):
             return
 
         if message.content == "!riddle" or message.content == "!Riddle":
-            satz_liste = ["Riddle du alter Haudegen!", "Gold war mal cool, aber nicht eternal....",
+            """satz_liste = ["Riddle du alter Haudegen!", "Gold war mal cool, aber nicht eternal....",
                           "The serpent dies but its soul is eternal...", "LeL I bims Riddle! " "Dracarys!"]
             index = randint(0, len(satz_liste) - 1)
-            text = satz_liste[index]
-            await message.channel.send("`" + text + "`")
+            text = satz_liste[index]"""
+            await message.channel.send(file = discord.File("dracarys.png"))
 
         if message.content == "!hertha":
             satz_liste = ["Hier könnte Ihre Werbung stehen!", "Read Nine Star Hegemon Body Arts!", "You should try Overgeared!",
