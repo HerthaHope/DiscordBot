@@ -17,7 +17,16 @@ class MyCLient(discord.Client):
                           "The serpent dies but its soul is eternal...", "LeL I bims Riddle! " "Dracarys!"]
             index = randint(0, len(satz_liste) - 1)
             text = satz_liste[index]"""
-            await message.channel.send(file = discord.File("minidracarys.gif"))
+            gifs = ["riddle1.gif", "riddle2.gif", "riddle3.gif"]
+            index = randint(0, len(gifs) - 1)
+            text = gifs[index]
+            await message.channel.send(file = discord.File(text))
+
+        if message.content == "!dracarys" or message.content == "!Dracarys":
+            gifs = ["dracarys.gif", "minidracarys.gif"]
+            index = randint(0, len(gifs) - 1)
+            text = gifs[index]
+            await message.channel.send(file = discord.File(text))
 
         if message.content == "!hertha":
             satz_liste = ["Hier könnte Ihre Werbung stehen!", "Read Nine Star Hegemon Body Arts!", "You should try Overgeared!",
@@ -39,7 +48,10 @@ class MyCLient(discord.Client):
             index = randint(0, len(satz_liste) - 1)
             text = satz_liste[index]
             await message.channel.send("`" + text + "`")"""
-            await message.channel.send(file = discord.File("pure1.gif"))
+            gifs = ["pure1.gif", "pure2.gif", "pure3.gif"]
+            index = randint(0, len(gifs) - 1)
+            text = gifs[index]
+            await message.channel.send(file = discord.File(text))
 
         if message.content == "!guiying" or message.content == "!Guiying":
             satz_liste = ["Ja ich spiele noch, aber Riddle ist bei uns....",
