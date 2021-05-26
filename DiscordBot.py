@@ -17,7 +17,7 @@ class MyCLient(discord.Client):
                           "The serpent dies but its soul is eternal...", "LeL I bims Riddle! " "Dracarys!"]
             index = randint(0, len(satz_liste) - 1)
             text = satz_liste[index]"""
-            await message.channel.send(file = discord.File("dracarys.png"))
+            await message.channel.send(file = discord.File("/BilderGif/minidracarys.gif"))
 
         if message.content == "!hertha":
             satz_liste = ["Hier könnte Ihre Werbung stehen!", "Read Nine Star Hegemon Body Arts!", "You should try Overgeared!",
