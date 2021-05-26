@@ -17,7 +17,7 @@ class MyCLient(discord.Client):
                           "The serpent dies but its soul is eternal...", "LeL I bims Riddle! " "Dracarys!"]
             index = randint(0, len(satz_liste) - 1)
             text = satz_liste[index]"""
-            await message.channel.send(file = discord.File("/BilderGif/minidracarys.gif"))
+            await message.channel.send(file = discord.File("minidracarys.gif"))
 
         if message.content == "!hertha":
             satz_liste = ["Hier könnte Ihre Werbung stehen!", "Read Nine Star Hegemon Body Arts!", "You should try Overgeared!",
@@ -34,11 +34,12 @@ class MyCLient(discord.Client):
             await message.channel.send("`" + text + "`")
 
         if message.content == "!pure" or message.content == "!pureluck":
-            satz_liste = ["My Panda is STRONK!!!", "Iskender Kebab ist beste! ", "Who wants some ruins? Too bad, those are mine.",
+            """satz_liste = ["My Panda is STRONK!!!", "Iskender Kebab ist beste! ", "Who wants some ruins? Too bad, those are mine.",
                           "I have apples for everyone. ", "Das Leben ist hart ohne Mastercard!"]
             index = randint(0, len(satz_liste) - 1)
             text = satz_liste[index]
-            await message.channel.send("`" + text + "`")
+            await message.channel.send("`" + text + "`")"""
+            await message.channel.send(file = discord.File("pure1.gif"))
 
         if message.content == "!guiying" or message.content == "!Guiying":
             satz_liste = ["Ja ich spiele noch, aber Riddle ist bei uns....",
