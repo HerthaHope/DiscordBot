@@ -11,7 +11,8 @@ class MyCLient(discord.Client):
     async def on_message(self, message):
         if message.author == client.user:
             return
-
+        if message.content == "!test":
+            await message.channel.send(file = "http://gifthescreen.tumblr.com/post/59120341795/dammit-sam")
         if message.content == "!riddle" or message.content == "!Riddle":
             """satz_liste = ["Riddle du alter Haudegen!", "Gold war mal cool, aber nicht eternal....",
                           "The serpent dies but its soul is eternal...", "LeL I bims Riddle! " "Dracarys!"]
